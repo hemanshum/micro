@@ -6,26 +6,18 @@ import Headline from "../components/HeadlineComponent";
 import Text from "../components/TextComponent";
 import Button from "../components/ButtonComponent";
 
-const SignupScreen = () => {
+const SigninScreen = () => {
   const [value, onChangeText] = React.useState("");
   return (
     <View style={styles.container}>
       <Button style={styles.button}>
         <Feather name="arrow-left" size={24} color="black" />
       </Button>
-      <Headline style={styles.headline}>Sign up</Headline>
+      <Headline style={styles.headline}>Login</Headline>
       <Text style={styles.subHeading}>
-        You have chance to create new account if you really want to.
+        Welcome back, please login to write, comment and edit blogs.
       </Text>
-      <TextInput
-        style={styles.input}
-        icon="user"
-        color="#18191F"
-        iconSize={24}
-        placeholder="Full Name"
-        value={value}
-        onChangeText={(text) => onChangeText(text)}
-      />
+
       <TextInput
         style={styles.input}
         icon="mail"
@@ -44,10 +36,10 @@ const SignupScreen = () => {
         value={value}
         onChangeText={(text) => onChangeText(text)}
       />
-      <Button style={styles.btn}>Register</Button>
+      <Button style={styles.btn}>Login</Button>
       <Text style={styles.smallText}>
-        Already have an account?
-        <Text style={styles.goHere}> Go here</Text>
+        New here?
+        <Text style={styles.goHere}> Create new account</Text>
       </Text>
     </View>
   );
@@ -87,4 +79,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignupScreen;
+export default SigninScreen;

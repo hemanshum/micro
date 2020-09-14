@@ -5,6 +5,7 @@ import { AppLoading } from "expo";
 import OnbordingScreen from "./src/screens/OnbordingScreen";
 import SelectAuthOptScreen from "./src/screens/SelectAuthOptScreen";
 import SignupScreen from "./src/screens/SignupScreen";
+import SigninScreen from "./src/screens/SigninScreen";
 
 //Configured fonts to use
 const loadFonts = () => {
@@ -30,7 +31,7 @@ export default function App() {
     );
   }
 
-  return <SignupScreen />;
+  return <SigninScreen />;
 }
 
 const styles = StyleSheet.create({

@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, TextInput } from "react-native";
+import { StyleSheet, View, TextInput } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 const TextInputComponent = ({
@@ -9,9 +9,10 @@ const TextInputComponent = ({
   iconSize,
   color,
   placeholder,
+  style,
 }) => {
   return (
-    <View style={styles.container}>
+    <View style={[style, styles.container]}>
       <Feather style={styles.icon} name={icon} size={iconSize} color={color} />
       <TextInput
         style={styles.textInput}
@@ -39,9 +40,9 @@ const styles = StyleSheet.create({
     width: "85%",
     height: "100%",
     paddingHorizontal: 10,
-    marginHorizontal: 10,
     fontSize: 21,
     fontFamily: "mrt-mid",
+    color: "#18191F",
   },
 });
 
