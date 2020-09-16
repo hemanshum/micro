@@ -3,9 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
 import OnbordingScreen from "./src/screens/OnbordingScreen";
-import SelectAuthOptScreen from "./src/screens/SelectAuthOptScreen";
+import SelectAuthOptScreen from "./src/screens/SelectAuthOptionScreen";
 import SignupScreen from "./src/screens/SignupScreen";
 import SigninScreen from "./src/screens/SigninScreen";
+import HomeScreen from "./src/screens/HomeScreen";
 
 //Configured fonts to use
 const loadFonts = () => {
@@ -31,7 +32,7 @@ export default function App() {
     );
   }
 
-  return <SigninScreen />;
+  return <HomeScreen />;
 }
 
 const styles = StyleSheet.create({
